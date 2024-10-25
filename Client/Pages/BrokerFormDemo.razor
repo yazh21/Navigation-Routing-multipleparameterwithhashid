@@ -1,0 +1,31 @@
+﻿@page "/brokerformdemo"
+@inject NavigationManager NavManager
+
+@code {
+
+
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public int Rid { get; set; }
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public int Wid { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        NavManager.NavigateTo($"demo?Rid={Rid}&Wid={Wid}", false, true);
+
+    }
+    // private string Rid;
+    //  protected override async Task OnInitializedAsync()
+    //  {
+    // var uri = new Uri(NavManager.Uri);
+    // var query = Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseQuery(uri.Query);
+
+    //         if (query.TryGetValue("Rid", out var ridValue))
+    //         {
+    //             Rid = ridValue;
+    //         }
+    //  }
+
+}

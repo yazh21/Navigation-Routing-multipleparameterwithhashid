@@ -1,0 +1,24 @@
+﻿@page "/demomain"
+
+
+@inject NavigationManager NavManager
+
+       
+        <Demo Rid="@Rid" Wid="@Wid" />
+        <br/>
+       @*  <MudButton ButtonType="ButtonType.Button" Variant="Variant.Filled" OnClick="View">View</MudButton> *@
+
+<AnchorNavigation />
+@code {
+    public int Rid { get; set; } = 102;
+
+
+    public int Wid { get; set; } = 155;
+   
+
+    // private async Task View()
+    // {
+    //     NavManager.NavigateTo($"/demo?Rid={Rid}&Wid={Wid}");
+    // }
+    
+}

@@ -1,0 +1,112 @@
+﻿@page "/demo"
+
+
+@inject NavigationManager NavManager
+<style>
+    /* Use a more specific selector if possible */
+    *[id] {
+        scroll-margin-top: 5rem;
+    }
+</style>
+<strong>Table of Contents</strong>
+<ul>
+
+    <li><a href="/demo?Rid={Rid}&Wid={Wid}#header1">Header1</a></li>
+    <li><a href="/demo?Rid={Rid}&Wid={Wid}#header2">Header2</a></li>
+    <li><a href="/demo?Rid={Rid}&Wid={Wid}#header3">Header3</a></li>
+    <li><a href="/demo?Rid={Rid}&Wid={Wid}#header4">Header4</a></li>
+    <li><a href="/demo?Rid={Rid}&Wid={Wid}#header5">Header5</a></li>
+</ul>
+<br/>
+
+<br />
+<ul>
+    <li><a @onclick="@( () => NavigateToFragment1(Rid, Wid, $"header1") )">Header1</a></li>
+    <li><a @onclick="@( () => NavigateToFragment1(Rid, Wid, $"header2") )">Header2</a></li>
+    <li><a @onclick="@( () => NavigateToFragment1(Rid, Wid, $"header3") )">Header3</a></li>
+    <li><a @onclick="@( () => NavigateToFragment1(Rid, Wid, $"header4") )">Header4</a></li>
+    <li><a @onclick="@( () => NavigateToFragment1(Rid, Wid, $"header5") )">Header5</a></li>
+</ul>
+
+
+
+
+    <h1 id="header1">Header 1</h1>
+    <a>
+        Language is a structured system of communication that consists of grammar and vocabulary. It is the primary means by which humans convey meaning, both in spoken and signed forms, and may also be conveyed through writing. Human language is characterized by its cultural and historical diversity, with significant variations observed between cultures and across time.[1] Human languages possess the properties of productivity and displacement, which enable the creation of an infinite number of sentences, and the ability to refer to objects, events, and ideas that are not immediately present in the discourse. The use of human language relies on social convention and is acquired through learning.
+
+        Estimates of the number of human languages in the world vary between 5,000 and 7,000. Precise estimates depend on an arbitrary distinction (dichotomy) established between languages and dialects.[2] Natural languages are spoken, signed, or both; however, any language can be encoded into secondary media using auditory, visual, or tactile stimuli – for example, writing, whistling, signing, or braille. In other words, human language is modality-independent, but written or signed language is the way to inscribe or encode the natural human speech or gestures.
+
+        Depending on philosophical perspectives regarding the definition of language and meaning, when used as a general concept, "language" may refer to the cognitive ability to learn and use systems of complex communication, or to describe the set of rules that makes up these systems, or the set of utterances that can be produced from those rules. All languages rely on the process of semiosis to relate signs to particular meanings. Oral, manual and tactile languages contain a phonological system that governs how symbols are used to form sequences known as words or morphemes, and a syntactic system that governs how words and morphemes are combined to form phrases and utterances.
+    </a>
+<h1 id="header2">Header 2</h1>
+<a>
+    Language is a structured system of communication that consists of grammar and vocabulary. It is the primary means by which humans convey meaning, both in spoken and signed forms, and may also be conveyed through writing. Human language is characterized by its cultural and historical diversity, with significant variations observed between cultures and across time.[1] Human languages possess the properties of productivity and displacement, which enable the creation of an infinite number of sentences, and the ability to refer to objects, events, and ideas that are not immediately present in the discourse. The use of human language relies on social convention and is acquired through learning.
+
+    Estimates of the number of human languages in the world vary between 5,000 and 7,000. Precise estimates depend on an arbitrary distinction (dichotomy) established between languages and dialects.[2] Natural languages are spoken, signed, or both; however, any language can be encoded into secondary media using auditory, visual, or tactile stimuli – for example, writing, whistling, signing, or braille. In other words, human language is modality-independent, but written or signed language is the way to inscribe or encode the natural human speech or gestures.
+
+    Depending on philosophical perspectives regarding the definition of language and meaning, when used as a general concept, "language" may refer to the cognitive ability to learn and use systems of complex communication, or to describe the set of rules that makes up these systems, or the set of utterances that can be produced from those rules. All languages rely on the process of semiosis to relate signs to particular meanings. Oral, manual and tactile languages contain a phonological system that governs how symbols are used to form sequences known as words or morphemes, and a syntactic system that governs how words and morphemes are combined to form phrases and utterances.
+</a>
+<h1 id="header3">Header 3</h1>
+<a>
+    Language is a structured system of communication that consists of grammar and vocabulary. It is the primary means by which humans convey meaning, both in spoken and signed forms, and may also be conveyed through writing. Human language is characterized by its cultural and historical diversity, with significant variations observed between cultures and across time.[1] Human languages possess the properties of productivity and displacement, which enable the creation of an infinite number of sentences, and the ability to refer to objects, events, and ideas that are not immediately present in the discourse. The use of human language relies on social convention and is acquired through learning.
+
+    Estimates of the number of human languages in the world vary between 5,000 and 7,000. Precise estimates depend on an arbitrary distinction (dichotomy) established between languages and dialects.[2] Natural languages are spoken, signed, or both; however, any language can be encoded into secondary media using auditory, visual, or tactile stimuli – for example, writing, whistling, signing, or braille. In other words, human language is modality-independent, but written or signed language is the way to inscribe or encode the natural human speech or gestures.
+
+    Depending on philosophical perspectives regarding the definition of language and meaning, when used as a general concept, "language" may refer to the cognitive ability to learn and use systems of complex communication, or to describe the set of rules that makes up these systems, or the set of utterances that can be produced from those rules. All languages rely on the process of semiosis to relate signs to particular meanings. Oral, manual and tactile languages contain a phonological system that governs how symbols are used to form sequences known as words or morphemes, and a syntactic system that governs how words and morphemes are combined to form phrases and utterances.
+</a>
+<h1 id="header4">Header 4</h1>
+<a>
+    Language is a structured system of communication that consists of grammar and vocabulary. It is the primary means by which humans convey meaning, both in spoken and signed forms, and may also be conveyed through writing. Human language is characterized by its cultural and historical diversity, with significant variations observed between cultures and across time.[1] Human languages possess the properties of productivity and displacement, which enable the creation of an infinite number of sentences, and the ability to refer to objects, events, and ideas that are not immediately present in the discourse. The use of human language relies on social convention and is acquired through learning.
+
+    Estimates of the number of human languages in the world vary between 5,000 and 7,000. Precise estimates depend on an arbitrary distinction (dichotomy) established between languages and dialects.[2] Natural languages are spoken, signed, or both; however, any language can be encoded into secondary media using auditory, visual, or tactile stimuli – for example, writing, whistling, signing, or braille. In other words, human language is modality-independent, but written or signed language is the way to inscribe or encode the natural human speech or gestures.
+
+    Depending on philosophical perspectives regarding the definition of language and meaning, when used as a general concept, "language" may refer to the cognitive ability to learn and use systems of complex communication, or to describe the set of rules that makes up these systems, or the set of utterances that can be produced from those rules. All languages rely on the process of semiosis to relate signs to particular meanings. Oral, manual and tactile languages contain a phonological system that governs how symbols are used to form sequences known as words or morphemes, and a syntactic system that governs how words and morphemes are combined to form phrases and utterances.
+</a>
+<h1 id="header5">Header 5</h1>
+<a>
+    Language is a structured system of communication that consists of grammar and vocabulary. It is the primary means by which humans convey meaning, both in spoken and signed forms, and may also be conveyed through writing. Human language is characterized by its cultural and historical diversity, with significant variations observed between cultures and across time.[1] Human languages possess the properties of productivity and displacement, which enable the creation of an infinite number of sentences, and the ability to refer to objects, events, and ideas that are not immediately present in the discourse. The use of human language relies on social convention and is acquired through learning.
+
+    Estimates of the number of human languages in the world vary between 5,000 and 7,000. Precise estimates depend on an arbitrary distinction (dichotomy) established between languages and dialects.[2] Natural languages are spoken, signed, or both; however, any language can be encoded into secondary media using auditory, visual, or tactile stimuli – for example, writing, whistling, signing, or braille. In other words, human language is modality-independent, but written or signed language is the way to inscribe or encode the natural human speech or gestures.
+
+    Depending on philosophical perspectives regarding the definition of language and meaning, when used as a general concept, "language" may refer to the cognitive ability to learn and use systems of complex communication, or to describe the set of rules that makes up these systems, or the set of utterances that can be produced from those rules. All languages rely on the process of semiosis to relate signs to particular meanings. Oral, manual and tactile languages contain a phonological system that governs how symbols are used to form sequences known as words or morphemes, and a syntactic system that governs how words and morphemes are combined to form phrases and utterances.
+</a>
+
+@* 👇 Integrate the component *@
+<AnchorNavigation />
+
+
+@code{
+   
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public int Rid { get; set; }
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public int Wid { get; set; }
+   
+    protected override async Task OnInitializedAsync()
+    {
+    }
+    void NavigateToFragment(int rid, string fragment)
+    {
+        // Navigate to the route using the correct URL format for fragments
+        var uri = NavManager.Uri;
+        var newUri = $"{uri.Split('#')[0]}#{fragment}";
+        NavManager.NavigateTo(newUri);
+    }
+    void NavigateToFragment1(int rid, int wid, string fragment)
+    {
+        // Get the base URI without the fragment part
+        //var uri = NavManager.Uri.Split('#')[0];
+        var uri1 = NavManager.Uri.Split('#')[0];
+        var uri = NavManager.Uri;
+        var newUri = $"{uri.Split('#')[0]}#{fragment}";
+        NavManager.NavigateTo(newUri);
+        // Construct the new URI with Rid, Wid, and fragment
+        //var newUri = $"{uri}?Rid={rid}&Wid={wid}#{fragment}";
+       
+    }
+    
+    
+}
